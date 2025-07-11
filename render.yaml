@@ -3,10 +3,13 @@ services:
     name: nurox-bot
     env: python
     plan: free
-    buildCommand: "pip install -r requirements.txt"
+    buildCommand: |
+      pip install --upgrade pip
+      pip install "openai==1.30.5"
+      pip install -r requirements.txt
     startCommand: "bash start.sh"
     envVars:
-      - key: OPENAI_API_KEY
-        fromEnv: OPENAI_API_KEY
       - key: BOT_TOKEN
         fromEnv: BOT_TOKEN
+      - key: OPENAI_API_KEY
+        fromEnv: OPENAI_API_KEY
