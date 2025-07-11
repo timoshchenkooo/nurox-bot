@@ -7,6 +7,6 @@ services:
     startCommand: "bash start.sh"
     envVars:
       - key: BOT_TOKEN
-        fromEnv: BOT_TOKEN
+        value: ${BOT_TOKEN}
       - key: OPENAI_API_KEY
-        fromEnv: OPENAI_API_KEY
+        value: ${OPENAI_API_KEY}
