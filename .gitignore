@@ -1,0 +1,54 @@
+# 🐍 Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# 🗃 Bytecode and compiled files
+*.so
+*.dll
+
+# 🧪 Test output
+.pytest_cache/
+htmlcov/
+.coverage
+.tox/
+nosetests.xml
+coverage.xml
+*.cover
+
+# 🧠 Jupyter notebooks (если вдруг появятся)
+.ipynb_checkpoints/
+
+# ⚙️ IDE/editor folders
+.vscode/
+.idea/
+
+# 💻 System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 🔐 Environment files
+.env
+*.env
+
+# 🧾 Log files
+*.log
+
+# ⚠️ SQLite и временные файлы
+*.sqlite3
+*.db
+
+# 📦 Python virtualenv (если вдруг создашь локально)
+venv/
+env/
+.venv/
+
+# 📦 Poetry (если начнёшь использовать)
+poetry.lock
+
+# 🚀 Render-specific build artifacts (если появятся)
+build/
+dist/
+*.egg-info/
