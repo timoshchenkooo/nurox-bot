@@ -1,8 +1,8 @@
 # services/generator.py
-from openai import AsyncOpenAI
+from openai import OpenAI
 import os
 
-client = AsyncOpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 async def generate_business_idea(prompt):
     response = await client.chat.completions.create(
